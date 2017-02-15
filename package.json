@@ -1,0 +1,9 @@
+{
+  "name": "capsule",
+  "version": "0.0.0",
+  "description": "A state container based on Flux, but a simpler concept than Redux.",
+  "main": "capsule.js",
+  "repository": "https://github.com/aikar/capsule",
+  "author": "Daniel Ennis <aikar@aikar.co>",
+  "license": "MIT"
+}
