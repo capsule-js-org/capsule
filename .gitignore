@@ -2,9 +2,7 @@
 logs
 *.log
 npm-debug.log*
-
-# Runtime data
-pids
+yarn*.log
 *.pid
 *.seed
 
@@ -13,12 +11,6 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
 
 # node-waf configuration
 .lock-wscript
@@ -35,3 +27,14 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+
+.idea/workspace.xml
+.idea/dictionaries
+.idea/misc.xml
+.idea/compiler.xml
+.idea/vcs.xml
+.idea/uiDesigner.xml
+.cache
+
+dist/
