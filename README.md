@@ -39,6 +39,7 @@ This project is just starting, so this is subject to change, but my design goals
    Actions will mandate use of Promises
  - React Binding to map observers to component state.  
    Simple API may look something like  
+   
    ```javascript
    import {bindState} from "capsule-react";
    import {history, users} from "../actions/chat";
