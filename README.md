@@ -37,7 +37,7 @@ This project is just starting, so this is subject to change, but my design goals
  - **Retrievers are bound to a specific capsule (the state container)**
    Apps are encouraged to use many capsules for each specific state segment.  
    Some kind of capsule manager may be provided, if benefit is found.
- - **State snapshots can be taken as a "Time Capsule"**
+ - **State snapshots can be taken as a "Time Capsule"**  
    Rather than keeping a log of every state change, consuming memory, applications will need to control their own state
    snapshots logic. An API to restore a capsule to a previous version will exists.
    
