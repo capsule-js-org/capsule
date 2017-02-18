@@ -40,12 +40,9 @@ This project is just starting, so this is subject to change, but my design goals
  - **State snapshots can be taken as a "Time Capsule"**  
    Rather than keeping a log of every state change, consuming memory, applications will need to control their own state
    snapshots logic. An API to restore a capsule to a previous version will exists.
-   
- - **Actions are asynchronous Functioons**
-   - No string keys. You must have direct reference. 
+ - **Actions are Functions that return Promises**
    - No chance for typos without it being obvious!
    - I want to support custom Capsule implementations, such as external state.
-   - Actions will mandate use of Promises
    - An action may end up not being asynchronous, but the API will require it to be future proof.  
    - One can add asynchronous logic to their action without breaking the API.
  - **React Binding to map observables to component state**  
