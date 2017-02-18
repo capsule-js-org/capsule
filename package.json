@@ -1,5 +1,5 @@
 {
-  "name": "capsule-core",
+  "name": "capsule",
   "version": "0.0.0",
   "description": "A state container based on Flux, but a simpler concept than Redux.",
   "main": "dist/Capsule.js",
