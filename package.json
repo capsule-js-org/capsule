@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist/*.js; node_modules/.bin/gulp build",
+    "build": "rm -rf dist/; mkdir dist/; touch dist/.npmignore; node_modules/.bin/gulp build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
