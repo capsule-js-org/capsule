@@ -24,25 +24,34 @@
 const gulp = require('gulp');
 require('gulp-bash-completion')(gulp);
 const babel = require('gulp-babel');
+const license = require('gulp-license-check');
 const flow = require('gulp-flowtype');
 const umd = require('gulp-umd');
 const sourcemaps = require('gulp-sourcemaps');
 const scripts = 'src/**/*.js';
+
 gulp.task('build', () => {
   return gulp.src(scripts, {base: 'src'})
-    .pipe(sourcemaps.init())
+    .pipe(license({
+      path: 'LICENSE',
+      blocking: false,
+      logInfo: false,
+      logError: true
+    }))
     .pipe(flow({
       all: false,
       weak: false,
-      killFlow: true,
       beep: true,
       abort: true,
     }))
+    .pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(umd())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task('prepublish', ['build']);
 
 gulp.task('default', ['build'], () => {
   require('gulp-watch')(scripts, () => scheduleTask('build'));

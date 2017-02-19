@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist/; mkdir dist/; touch dist/.npmignore; node_modules/.bin/gulp build",
-    "prepublish": "npm run build"
+    "build": "rm -rf dist/; gulp build",
+    "prepublish": "rm -rf dist/; mkdir dist/; touch dist/.npmignore; gulp prepublish"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -22,6 +22,7 @@
     "gulp-bash-completion": "^1.1.0",
     "gulp-cli": "^1.2.2",
     "gulp-flowtype": "aikar/gulp-flowtype",
+    "gulp-license-check": "^1.1.2",
     "gulp-notify": "^3.0.0",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-umd": "^0.2.0",

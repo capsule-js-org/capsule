@@ -1065,7 +1065,7 @@ esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
 
-event-stream@^3.1.7, event-stream@~3.3.0:
+event-stream@^3.1.7, event-stream@^3.3.2, event-stream@~3.3.0:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   dependencies:
@@ -1497,6 +1497,15 @@ gulp-flowtype@aikar/gulp-flowtype:
     log-symbols "^1.0.1"
     q "^1.1.2"
     through2 "~2.0.0"
+
+gulp-license-check@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gulp-license-check/-/gulp-license-check-1.1.2.tgz#910b46240ddea6e9918aaf7407c196704a409a1a"
+  dependencies:
+    event-stream "^3.3.2"
+    gulp-util "^3.0.7"
+    through2 "^2.0.1"
+    vinyl-file "^2.0.0"
 
 gulp-notify@^3.0.0:
   version "3.0.0"
@@ -3217,7 +3226,7 @@ test-exclude@^1.1.0:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
-through2@2.X, through2@^2.0.0, through2@^2.0.3, through2@~2.0.0:
+through2@2.X, through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@~2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
