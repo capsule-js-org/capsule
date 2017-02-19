@@ -34,7 +34,7 @@ This project is just starting, so this is subject to change, but my design goals
  - **Listeners to observables are only notified if that observable changes**  
    As just noted, while the backing state may get updated, if the transformations a retriever applies results in no 
    change in value after transformations, then the listeners will not be notified. 
- - **Retrievers are bound to a specific capsule (the state container)**
+ - **Retrievers are bound to a specific capsule**  
    Apps are encouraged to use many capsules for each specific state segment.  
    Some kind of capsule manager may be provided, if benefit is found.
  - **State snapshots can be taken as a "Time Capsule"**  
