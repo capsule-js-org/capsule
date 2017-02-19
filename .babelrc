@@ -1,5 +1,4 @@
 {
-  "minified": true,
   "sourceMaps": true,
   "presets": [
     [
@@ -9,5 +8,6 @@
       }
     ],
     "stage-1"
-  ]
+  ],
+  "plugins": ["transform-flow-strip-types"]
 }
